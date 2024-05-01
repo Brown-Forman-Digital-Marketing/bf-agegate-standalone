@@ -1,0 +1,201 @@
+.bfwpf-util--stop-scrolling {
+	height: 100px !important;
+	overflow: hidden !important;
+}
+
+/* https://tailwindcss.com/docs/screen-readers */
+.bfwpf-util--sr-only{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border-width: 0;
+}
+
+.bfwpf-util--hidden{
+    display: none !important;
+}
+
+.bfwpf-success-container {
+	scroll-margin-top: 30px;
+}
+
+.bfwpf-error-container,
+#lda_error_msg {
+	color: #dc3545;
+}
+.bfwpf-sticky-banner {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+}
+
+.bfwpf-sticky-banner--close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: 0;
+}
+
+.bfwpf-sticky-banner--close:focus,
+.bfwpf-sticky-banner--close:hover {
+  cursor: pointer;
+}
+.bfwpf-age-gate-remember-wrapper{
+	width: 100%;
+}
+
+/* cover the entire screen */
+.bfwpf-agegate__cover{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 1000;
+	overflow: hidden !important;
+	background-color: white;
+}
+
+/* Space the age gate container down so it doesn't go behind the WP admin bar when logged in */
+body.admin-bar .bfwpf-agegate__cover{
+	top: 32px;
+}
+div.bfwpf-legal-footer{
+    text-align: center;
+}
+
+.bfwpf-legal-footer-links__list{
+    list-style: none;
+}
+
+.bfwpf-legal-footer-links__list-item{
+    display: inline-block;
+}
+/* Xola Styles ported from here: https://bitbucket.org/brownforman/bf-xola-tour-button/src/master/public/css/xola-button.css */
+a.bfwpf-xola-fallback-link{
+	display: block;
+	position: absolute;
+	  top: 0;
+	  right: 0;
+	  bottom: 0;
+	  left: 0;
+	font-size: 0;
+	z-index: -1;
+}
+
+a.bfwpf-xola-fallback-link:focus{
+	opacity: 1;
+	outline: auto;
+	z-index: 1;
+}
+.bfwpf-filestack-preview-close {
+    /* width: 21px;
+    height: 21px;
+    line-height: normal;
+    padding: 0;
+    border-radius: 50%;
+    position: absolute;
+    top: -15;
+    right: -15; */
+    margin-left: 15px;
+}
+
+.bfwpf-filestack-preview-container p {
+    font-weight: bold;
+}
+
+.bfwpf-filestack-hidden-input {
+    opacity: 0;
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    position: absolute;
+    top: 0; 
+    left: 0;
+}
+
+.bfwpf-filestack-error .fsp-drop-pane__container { 
+    /* light red background color */
+    background-color: #e4b9b9;
+}
+
+
+.bfwpf-form-control-container{
+	width: 100%;
+}
+
+.bfwpf-form-control-container label,
+.bfwpf-form-control-container .bfwpf-fieldset-legend {
+	display: block;
+	width: 100%;
+}
+
+.bfwpf-form-control-container .bfwpf-fieldset-legend {
+	padding-inline-start: 0;
+}
+
+.bfwpf-form-control-container input{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bfwpf-form-control-container textarea{
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.bfwpf-form-control-container select{
+	width: 100%;
+	max-width: unset; /* This is to override a max-width style that affects the block editor appearance */
+}
+
+fieldset.bfwpf-lda-input{
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	border: none;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.bfwpf-lda-error-container {
+	flex: 0 0 100%;
+	text-align: center
+}
+
+.bfwpf-birthdate-input-field-wrapper{
+	flex: 0 0 33%;
+}
+
+.bfwpf-g-recaptcha {
+	margin: 15px 0;
+}
+
+.g-error {
+	background-color: #f00;
+	outline: 2px solid #f00;
+}
+
+.bfwpf-multi-select.bfwpf-invalid-element {
+	border: 1px solid #f00;
+}
+
+.bfwpf-tooltip.bfwpf-tooltip--error {
+	text-align: center;
+	color: #f00;	
+	padding: 10px;
+}
+

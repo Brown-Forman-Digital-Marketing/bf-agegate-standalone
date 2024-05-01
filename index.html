@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Age Gate Demo Page</title>
+    <link rel="stylesheet" href="css/bfwpf-styles.css" />
+  </head>
+  <body>
+    <!-- Your content goes here -->
+    <div>Branded Content</div>
+    <div id="bfwpf-agegate__agegate-outer" class="bfwpf-agegate__cover">
+      <div class="bfwpf-agegate-container__before"></div>
+      <div class="bfwpf-agegate-container__main">
+        <div class="bfwpf-agegate-container__inner">
+          <form
+            id="agegate_form"
+            name="agegate_form"
+            is="bf-agegate"
+            data-under-age-error-message="Sorry you are not of legal drinking age."
+            data-under-age-redirect-url="https://www.responsibility.org"
+            data-invalid-age-error-message="Invalid date entered."
+            data-unspecified-error-message="An error has occurred, please try again."
+            data-force-reload-on-success=""
+          >
+            <input
+              type="hidden"
+              id="category"
+              name="category"
+              value="spirits"
+            />
+            <div class="bfwpf-agegate-copy-outer">
+              <p class="">Please verify your age</p>
+            </div>
+            <div
+              class="bfwpf-agegate-form-outer bfwpf-age-gate-birthdate__wrapper"
+            >
+              <div class="bfwpf-form-control-container">
+                <fieldset
+                  is="birthdate-input"
+                  name="bf_lda_input"
+                  id="bf_lda_input"
+                  class="bfwpf-lda-input"
+                  data-user-detected-iso="US"
+                  data-month-label-text="Month"
+                  data-month-placeholder="MM"
+                  data-month-id="lda-month"
+                  data-day-label-text="Day"
+                  data-day-placeholder="DD"
+                  data-day-id="lda-day"
+                  data-year-label-text="Year"
+                  data-year-placeholder="YYYY"
+                  data-year-id="lda-year"
+                  data-lda-required="required"
+                  data-children-classes=""
+                >
+                  <legend class="bfwpf-fieldset-legend">
+                    <span class="">Birthdate*</span>
+                  </legend>
+                  <div
+                    style="display: none"
+                    class="bfwpf-lda-error-container"
+                    data-name="lda_error_container"
+                    role="alert"
+                  >
+                    <span
+                      data-name="lda_error_msg"
+                      class="bfwpf-lda-error-msg"
+                    ></span>
+                  </div>
+                </fieldset>
+              </div>
+            </div>
+
+            <div
+              class="bfwpf-form-control-container bfwpf-age-gate-country__wrapper"
+            >
+              <label class="" for="country">
+                <span class="">Country*</span>
+              </label>
+              <select
+                class=""
+                is="country-input"
+                id="country"
+                name="country"
+                data-default-iso="US"
+                required="required"
+                data-empty-selection-text=""
+              ></select>
+            </div>
+
+            <div class="bfwpf-age-gate-remember-wrapper">
+              <label class="age-gate-remember-label">
+                <input
+                  type="checkbox"
+                  name="remember"
+                  id="remember"
+                  class=""
+                  value="Y"
+                />
+                <span class="age-gate-remember-copy">Remember me</span>
+              </label>
+            </div>
+
+            <div class="bfwpf-agegate-copy-under-form">
+              <div>
+                <p>
+                  This site uses cookies.
+                  <a href="https://legal.brown-forman.com/cookie-policy/english"
+                    >Cookie Policy.</a
+                  >
+                  I agree to the
+                  <a href="https://legal.brown-forman.com/terms-of-use/english"
+                    >terms of use</a
+                  >, and the
+                  <a
+                    href="https://legal.brown-forman.com/privacy-policy/english"
+                    >privacy policy</a
+                  >. This information will not be used for marketing purposes.
+                </p>
+              </div>
+            </div>
+
+            <div class="age-gate-submit-wrapper">
+              <input type="submit" class="" value="Enter" id="btn_submit" />
+            </div>
+          </form>
+        </div>
+        <div class="bfwpf-legal-footer">
+          <div
+            class="bfwpf-legal-footer-moderation-message__wrapper bfwpf-legal-footer-line"
+          >
+            <span class="bfwpf-legal-footer-moderation-message__copy"></span>
+          </div>
+        </div>
+      </div>
+      <div class="bfwpf-agegate-container__after"></div>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
