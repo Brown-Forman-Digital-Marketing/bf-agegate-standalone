@@ -56,7 +56,6 @@ class Agegate extends HTMLFormElement {
      * Remove bfwpf-util--hidden class from all elements under <body>
      */
     showBody() {
-        //let me = this;
         let body = document.querySelector('body');
         let children = body.children;
         for (let i = 0; i < children.length; i++) {
